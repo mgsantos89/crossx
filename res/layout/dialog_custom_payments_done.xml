@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_type" android:background="@drawable/shape_custom" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="28.0dip" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_light" android:gravity="center" android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:text="@string/app_name" android:layout_toRightOf="@id/imageview_type" android:layout_alignTop="@id/imageview_type" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_dark" android:id="@id/textview_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/app_name" android:layout_below="@id/textview_title" />
+    <RelativeLayout android:id="@id/container_data_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="32.0dip" android:layout_below="@id/textview_description">
+        <TextView android:textColor="@color/black_light" android:id="@id/textview_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_card" />
+        <TextView android:textSize="12.0sp" android:id="@id/textview_brand_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/app_name" android:layout_below="@id/textview_card" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_dark" android:id="@id/textview_total_paid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/dialog_custom_payments_done_total_paid" android:layout_alignTop="@id/textview_card" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/blue" android:id="@id/textview_total_paid_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/textview_card" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/container_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/container_data_card">
+        <Button android:textSize="12.0sp" android:id="@id/button_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:textAllCaps="true" style="@style/BlueButton" />
+        <Button android:textSize="12.0sp" android:textColor="@color/blue" android:id="@id/button_down" android:background="@drawable/shape_button_scanner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/app_name" android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

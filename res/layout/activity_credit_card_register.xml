@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/main_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:background="@color/white" android:paddingBottom="30.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/item_credit_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <androidx.cardview.widget.CardView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="202.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="11.0dip" app:cardBackgroundColor="@color/background_card" app:cardCornerRadius="5.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/background_card" android:scaleType="centerCrop" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="32.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                            <ImageView android:id="@id/card_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="25.0dip">
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/fourth_group">
+                                <TextView android:textSize="19.0sp" android:textColor="@color/white" android:id="@id/card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="**** **** **** ****" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="28.0dip">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/expiration_layout">
+                                <TextView android:textSize="7.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_card_holder" />
+                                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/card_holder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="***************" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/expiration_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                                <TextView android:textSize="7.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_expires" />
+                                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/card_expiration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="**/**" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/background">
+                <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:id="@id/label_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_name" />
+                <EditText android:id="@id/name_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:layout_below="@id/label_name" android:inputType="textCapSentences" android:textAlignment="textStart" style="@style/GrayEditext" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/line1">
+                <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:id="@id/label_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_number" />
+                <EditText android:id="@id/number_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:layout_below="@id/label_number" android:inputType="phone" android:textAlignment="textStart" style="@style/GrayEditext" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/line3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/line2">
+                <LinearLayout android:orientation="horizontal" android:id="@id/line4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:id="@id/label_expiration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_expiration" />
+                        <EditText android:id="@id/expiration_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:layout_below="@id/label_expiration" android:inputType="phone" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:id="@id/label_cvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_cvv" />
+                        <EditText android:id="@id/cvv_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:layout_below="@id/label_cvv" android:inputType="phone" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <Switch android:id="@id/switch_other_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/knob" android:track="@drawable/switch_track" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:id="@id/text_view_other_user" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_belongs_to_another_user" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_container_other_user" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff4d4d4d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_data" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_name_extra" />
+                    <EditText android:id="@id/holder_name_extra" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textCapWords" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_surname" />
+                    <EditText android:id="@id/holder_surname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textCapWords" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_cpf" />
+                    <EditText android:id="@id/holder_cpf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="number" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_email" />
+                    <EditText android:id="@id/holder_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textEmailAddress" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_phone" />
+                    <EditText android:id="@id/holder_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="number" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_zip_code" />
+                    <EditText android:id="@id/holder_zip_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="number" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_street" />
+                    <EditText android:enabled="false" android:id="@id/holder_street" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textCapWords" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_weight="2.0">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_holder_street_number" />
+                            <EditText android:id="@id/holder_street_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="number" android:textAlignment="textStart" style="@style/GrayEditext" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_holder_street_complement" />
+                            <EditText android:id="@id/holder_street_complement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textCapWords" android:textAlignment="textStart" style="@style/GrayEditext" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/act_new_credit_card_holder_district" />
+                    <EditText android:enabled="false" android:id="@id/holder_district" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textCapWords" android:textAlignment="textStart" style="@style/GrayEditext" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_weight="2.0">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_holder_city" />
+                            <EditText android:enabled="false" android:id="@id/holder_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textCapWords" android:textAlignment="textStart" style="@style/GrayEditext" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_new_credit_card_holder_state" />
+                            <EditText android:enabled="false" android:id="@id/holder_state" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:drawablePadding="@dimen/margin_small" android:inputType="textCapWords" android:drawableEnd="@drawable/ic_arrow_down" android:textAlignment="textStart" style="@style/GrayEditext" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:id="@id/btn_fav_card" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="20.0dip">
+                    <ImageView android:id="@id/btn_fav_card_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/act_new_credit_card_default" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/progressBarLoad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:progressBarStyleLarge" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ffb0b0b0" android:id="@id/item_user_workout_day_week" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="Thu" />
+        <TextView android:textSize="32.0sp" android:textColor="@color/my_trainings_cell_color" android:id="@id/item_user_workout_day_month" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="16" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/my_trainings_cell_color" android:id="@id/item_user_workout_name_program" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="crosfit" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/my_trainings_cell_color" android:gravity="center|left" android:id="@id/item_user_workout_hour" android:paddingLeft="-5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8h - 9h" android:drawableLeft="@drawable/ic_clock" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:textColor="#fff36c60" android:id="@id/button_add_result" android:background="@drawable/shape_button_add_result" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_add_result" />
+        <ImageView android:layout_width="@dimen/arrow_size" android:layout_height="@dimen/arrow_size" android:src="@drawable/ic_arrow" />
+    </LinearLayout>
+</LinearLayout>

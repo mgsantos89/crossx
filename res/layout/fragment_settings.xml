@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_small" android:layout_above="@id/layout_terms" android:layout_alignParentTop="true"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout android:id="@id/layout_notification" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+                <ImageView android:id="@id/ic_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/ic_notification_setting" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/txt_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_notification" android:layout_toLeftOf="@id/switch_noticafication" android:layout_toRightOf="@id/ic_notification" android:layout_centerVertical="true" />
+                <Switch android:id="@id/switch_noticafication" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/knob" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:track="@drawable/switch_track" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_unity" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+                <ImageView android:id="@id/ic_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/ic_bar" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/txt_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_unity" android:layout_toLeftOf="@id/arrow_bar" android:layout_toRightOf="@id/ic_bar" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_conversor" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+                <ImageView android:id="@id/ic_conversor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/icon_conversor" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/txt_conversor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_conversor" android:layout_toLeftOf="@id/arrow_conversor" android:layout_toRightOf="@id/ic_conversor" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_conversor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_about" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+                <ImageView android:id="@id/ic_guess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/ic_guess" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/txt_guess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_about" android:layout_toLeftOf="@id/arrow_guess" android:layout_toRightOf="@id/ic_guess" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_guess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_privacity" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+                <ImageView android:id="@id/ic_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/ic_hand" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/txt_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_privacity" android:layout_toLeftOf="@id/arrow_hand" android:layout_toRightOf="@id/ic_hand" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_glossary" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+                <ImageView android:id="@id/ic_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/ic_flag" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/txt_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_glossary" android:layout_toLeftOf="@id/arrow_flag" android:layout_toRightOf="@id/ic_flag" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_logout" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+                <ImageView android:id="@id/ic_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/ic_logout" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/txt_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_logout" android:layout_toLeftOf="@id/arrow_logout" android:layout_toRightOf="@id/ic_logout" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_terms" android:paddingTop="@dimen/margin_xsmall" android:paddingBottom="@dimen/margin_xsmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/gray_transparent" android:gravity="center" android:id="@id/terms" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_terms" android:layout_weight="1.0" />
+            <ImageView android:background="@color/gray_transparent" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/gray_transparent" android:gravity="center" android:id="@id/feedback" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_feedback" android:layout_weight="1.0" />
+            <ImageView android:background="@color/gray_transparent" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/gray_transparent" android:gravity="center" android:id="@id/delete_account" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frag_settings_delete_account" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

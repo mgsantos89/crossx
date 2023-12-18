@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/toolbar" />
+            <include layout="@layout/layout_membership_details" />
+            <View android:background="@color/gray_ligth" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/text_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:maxWidth="180.0dip" android:text="@string/global_empty_list" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_membership_details" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+    <ViewStub android:id="@id/stub_loading" android:layout="@layout/view_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_error" android:layout="@layout/view_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_empty" android:layout="@layout/view_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

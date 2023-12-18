@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_status" android:background="@color/pastel_red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageview_status" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="22.0dip" android:layout_marginBottom="22.0dip" android:src="@drawable/ic_warning" android:layout_marginStart="16.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/textview_status_to_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="22.0dip" android:text="@string/fragment_to_pay_warning_due_date" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+        <ExpandableListView android:id="@id/expandable_listview_to_pay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/container_total_items" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="63.0dip" android:elevation="4.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black_light" android:layout_gravity="center" android:id="@id/textview_total_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="4.0dip" android:text="@string/app_name" android:layout_toLeftOf="@id/button_to_pay" android:layout_marginStart="16.0dip" />
+            <TextView android:id="@id/textview_items" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/textview_total_value" android:layout_alignLeft="@id/textview_total_value" android:layout_alignStart="@id/textview_total_value" />
+            <Button android:id="@id/button_to_pay" android:layout_width="104.0dip" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/global_to_pay" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BlueButton" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/stub_loading" android:layout="@layout/view_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_error" android:layout="@layout/view_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_empty" android:layout="@layout/view_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/layout_post" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="65.0dip" android:fillViewport="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/text_medium" android:textColor="@color/black" android:gravity="top" android:id="@id/txt_post" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:hint="@string/act_post_txt_hint" />
+            <ImageView android:id="@id/img_post" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_medium" android:layout_marginRight="@dimen/text_medium" android:layout_marginBottom="@dimen/margin_small" android:scaleType="center" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/photo" android:padding="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_photo" android:layout_alignBottom="@id/layout_post" android:layout_alignParentBottom="true" />
+    <ProgressBar android:id="@id/progressBarPost" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+</RelativeLayout>

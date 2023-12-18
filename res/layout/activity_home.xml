@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_toobar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/primary_color" android:paddingTop="@dimen/notification_bar_heigth" android:layout_width="fill_parent" android:layout_height="@dimen/toobar_heigth" android:minHeight="?actionBarSize" android:layout_alignParentTop="true" android:elevation="4.0dip" app:popupTheme="@style/Theme.AppCompat.Light" app:theme="@style/ToolBar" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/fragments_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_toobar" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="start" android:id="@id/navigation_drawer" android:background="@color/gray_ligth" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/menu_drawer_list" android:background="@color/gray_ligth" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/menu_drawer_heigth_padding_header" android:divider="@color/gray_ligth" android:dividerHeight="0.0dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

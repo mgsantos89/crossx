@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TabLayout android:id="@id/tab_layout_payments" android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="8.0dip" fab:tabIndicatorColor="@android:color/white" fab:tabSelectedTextColor="@android:color/white" fab:tabTextColor="@android:color/white" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager_payments" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_layout_payments" />
+</RelativeLayout>

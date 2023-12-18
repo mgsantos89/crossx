@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.startapps.crossx.view.widget.listview.ObservableListView android:id="@id/list_timeline" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/gray_ligth" android:dividerHeight="1.0dip" android:layout_alignParentTop="true" />
+    <com.getbase.floatingactionbutton.FloatingActionButton android:id="@id/floating_post" android:paddingBottom="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:fab_colorNormal="@color/blue" app:fab_colorPressed="@color/blue_dark" app:fab_icon="@drawable/ic_add" />
+    <include layout="@layout/progress_loading" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_membership_details_footer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:id="@id/textview_start_label" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/activity_membership_details_start" />
+    <TextView android:id="@id/textview_date_start" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/textview_start_label" style="@style/TextViewTextDetails" />
+    <TextView android:textSize="14.0sp" android:id="@id/textview_end_label" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/activity_membership_details_end" android:layout_toRightOf="@id/textview_start_label" />
+    <TextView android:id="@id/textview_date_end" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/textview_end_label" android:layout_alignLeft="@id/textview_end_label" style="@style/TextViewTextDetails" />
+    <TextView android:textSize="14.0sp" android:id="@id/textview_recurrence" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/activity_membership_details_recurrence" android:layout_below="@id/textview_date_start" />
+    <TextView android:id="@id/textview_type_recurrence" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/textview_recurrence" style="@style/TextViewTextDetails" />
+    <TextView android:textSize="14.0sp" android:id="@id/textview_session_label" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/activity_membership_details_session" android:layout_toRightOf="@id/textview_recurrence" android:layout_alignBaseline="@id/textview_recurrence" />
+    <TextView android:id="@id/textview_session" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/textview_session_label" android:layout_alignLeft="@id/textview_session_label" style="@style/TextViewTextDetails" />
+</RelativeLayout>

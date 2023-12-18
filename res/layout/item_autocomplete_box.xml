@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_item_autocomplete" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_box" android:layout_width="@dimen/act_register_img_box_size" android:layout_height="@dimen/act_register_img_box_size" android:layout_margin="@dimen/margin_xsmall" />
+    <TextView android:textSize="@dimen/text_large" android:textColor="@color/gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/name_box" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/edit_profile" android:orderInCategory="9" android:title="@string/menu_profile_edit_profile" />
+    <item android:id="@id/alter_password" android:orderInCategory="9" android:title="@string/menu_profile_edit_password" />
+    <item android:id="@id/logout" android:orderInCategory="9" android:title="@string/menu_profile_logout" />
+</menu>

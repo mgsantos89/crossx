@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/menu_drawer_heigth_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_drawer_width_padding_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/menu_drawer_font_size" android:textColor="@color/black" android:gravity="center" android:id="@id/name" android:paddingLeft="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_drawer_width_padding_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" />
+</RelativeLayout>

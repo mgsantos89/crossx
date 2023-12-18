@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff212121" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/activity_name_group" />
+    <EditText android:textSize="15.0sp" android:textColor="#ff212121" android:layout_gravity="center_horizontal" android:id="@id/editTextNameGroup" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:hint="@string/activity_escrever" android:inputType="textCapWords" />
+    <ListView android:id="@id/list_athletes" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/white" android:dividerHeight="0.0dip" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/margin_largesmall" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_circle" android:background="@drawable/ic_circle" android:layout_width="10.0dip" android:layout_height="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/blue" android:ellipsize="end" android:id="@id/gym_class_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/open_sans_semibold" android:layout_marginStart="@dimen/margin_largesmall" app:layout_constraintLeft_toRightOf="@id/button_circle" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_gym_class_coaches" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_check_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_checkin_disable" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/text_xsmall" android:textStyle="italic" android:textColor="#ff8195a5" android:id="@id/gym_class_occupation" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:fontFamily="@font/open_sans" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/icon_check_in" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TableRow android:id="@id/hr" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/text_medium" />
+    </LinearLayout>
+</LinearLayout>

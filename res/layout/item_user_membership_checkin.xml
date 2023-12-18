@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/item_user_membership_checkin" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="14.0dip" android:paddingTop="15.0dip" android:paddingRight="14.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ff9b9b9b" android:id="@id/date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10/12/2019" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:id="@id/program_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CROSSFIT" android:layout_below="@id/date_label" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="120.0dip" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/line_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/ic_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clock" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff9b9b9b" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9h - 11:30h" android:layout_centerVertical="true" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff188bf1" android:id="@id/item_checkin" android:background="@drawable/shape_checkin" android:paddingLeft="18.0dip" android:paddingTop="3.0dip" android:paddingRight="18.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_checkin_upercase" android:layout_below="@id/line_time" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

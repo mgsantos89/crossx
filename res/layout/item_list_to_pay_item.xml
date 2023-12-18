@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="14.0dip" android:layout_weight="2.0" android:layout_marginStart="16.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/textview_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+        <TextView android:textSize="14.0sp" android:id="@id/textview_expiration_no_product" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/app_name" />
+        <TextView android:textSize="12.0sp" android:id="@id/textview_expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/textview_price" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:text="@string/app_name" android:layout_marginStart="16.0dip" />
+            <ImageView android:id="@id/imageview_info" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:src="@drawable/ic_info_outline" android:baselineAlignBottom="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

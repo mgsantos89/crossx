@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.startapps.crossx.view.calendar.WeekView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="7.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.startapps.crossx.view.calendar.CellView android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/calendar_horizontal_day_week_color_not_selected" android:text="Sun" style="@style/TextDayWeekHorizontalCalendar" />
+        <TextView android:textColor="@color/calendar_horizontal_day_month_color_not_selected" android:text="10" style="@style/TextDayMonthHorizontalCalendar" />
+    </com.startapps.crossx.view.calendar.CellView>
+    <com.startapps.crossx.view.calendar.CellView android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/calendar_horizontal_day_week_color_not_selected" android:text="Sun" style="@style/TextDayWeekHorizontalCalendar" />
+        <TextView android:textColor="@color/calendar_horizontal_day_month_color_not_selected" android:text="10" style="@style/TextDayMonthHorizontalCalendar" />
+    </com.startapps.crossx.view.calendar.CellView>
+    <com.startapps.crossx.view.calendar.CellView android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/calendar_horizontal_day_week_color_not_selected" android:text="Sun" style="@style/TextDayWeekHorizontalCalendar" />
+        <TextView android:textColor="@color/calendar_horizontal_day_month_color_not_selected" android:text="10" style="@style/TextDayMonthHorizontalCalendar" />
+    </com.startapps.crossx.view.calendar.CellView>
+    <com.startapps.crossx.view.calendar.CellView android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/calendar_horizontal_day_week_color_not_selected" android:text="Sun" style="@style/TextDayWeekHorizontalCalendar" />
+        <TextView android:textColor="@color/calendar_horizontal_day_month_color_not_selected" android:text="10" style="@style/TextDayMonthHorizontalCalendar" />
+    </com.startapps.crossx.view.calendar.CellView>
+    <com.startapps.crossx.view.calendar.CellView android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/calendar_horizontal_day_week_color_not_selected" android:text="Sun" style="@style/TextDayWeekHorizontalCalendar" />
+        <TextView android:textColor="@color/calendar_horizontal_day_month_color_not_selected" android:text="10" style="@style/TextDayMonthHorizontalCalendar" />
+    </com.startapps.crossx.view.calendar.CellView>
+    <com.startapps.crossx.view.calendar.CellView android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/calendar_horizontal_day_week_color_not_selected" android:text="Sun" style="@style/TextDayWeekHorizontalCalendar" />
+        <TextView android:textColor="@color/calendar_horizontal_day_month_color_not_selected" android:text="10" style="@style/TextDayMonthHorizontalCalendar" />
+    </com.startapps.crossx.view.calendar.CellView>
+    <com.startapps.crossx.view.calendar.CellView android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/calendar_horizontal_day_week_color_not_selected" android:text="Sun" style="@style/TextDayWeekHorizontalCalendar" />
+        <TextView android:textColor="@color/calendar_horizontal_day_month_color_not_selected" android:text="10" style="@style/TextDayMonthHorizontalCalendar" />
+    </com.startapps.crossx.view.calendar.CellView>
+</com.startapps.crossx.view.calendar.WeekView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xmedium" />
+        <TextView android:textSize="@dimen/text_xlarge" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/name_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray_dark" android:layout_gravity="center_horizontal" android:id="@id/description_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="Envie seu comentário, sugestão, elogio ou reclamação." />
+        <RelativeLayout android:id="@id/form_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_xmedium" android:layout_marginRight="@dimen/margin_small">
+            <TextView android:textSize="14.0sp" android:textColor="#ff4d4d4d" android:id="@id/label_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Comentário*" />
+            <EditText android:gravity="center|left|top" android:id="@id/commentText" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="@dimen/margin_small" android:drawablePadding="@dimen/margin_small" android:layout_below="@id/label_name" android:inputType="textMultiLine" style="@style/GrayEditext" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/commentText">
+                <Button android:id="@id/button_check_not_result" android:background="@drawable/shape_button_select_user" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enviar feedback anônimo" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

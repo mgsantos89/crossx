@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/seconds" />
+    <EditText android:id="@id/text_countdown" android:background="@color/gray_ligth" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="20.0dip" android:inputType="number" />
+    <LinearLayout android:orientation="horizontal" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <Button android:id="@id/bt_cancel" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginRight="1.0dip" android:text="cancelar" android:layout_weight="1.0" style="?android:borderlessButtonStyle" />
+        <Button android:id="@id/bt_ok" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="ok" android:layout_weight="1.0" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

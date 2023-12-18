@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <com.startapps.crossx.view.widget.listview.ObservableListView android:id="@id/championship_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/gray_ligth" android:dividerHeight="1.0dip" />
+    <ProgressBar android:id="@id/loadingChampionship" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:progressBarStyleLarge" />
+    <include layout="@layout/progress_loading" />
+</RelativeLayout>

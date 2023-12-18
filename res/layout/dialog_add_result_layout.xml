@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/text_date" />
+        <EditText android:textSize="15.0sp" android:textColor="#ff212121" android:layout_gravity="center_horizontal" android:id="@id/editTextDate" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="DD/MM/YYYY" android:inputType="number" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff212121" android:id="@id/label_time_or_carga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/text_time_placeholder" />
+        <EditText android:textSize="15.0sp" android:textColor="#ff212121" android:layout_gravity="center_horizontal" android:id="@id/editTextResult" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="50.0dip" android:digits="\ 0123456789" android:inputType="number" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/labelCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/text_categore" />
+        <Button android:gravity="left" android:id="@id/button_set_categotie" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff212121" android:id="@id/label_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/text_comment" />
+        <EditText android:textSize="15.0sp" android:textColor="#ff212121" android:gravity="center|left|top" android:id="@id/editTextDescription" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="100.0dip" android:inputType="textMultiLine" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:weightSum="2.0">
+            <Button android:id="@id/button_add_result_cancel" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/text_cancel" android:layout_weight="1.0" />
+            <Button android:id="@id/button_add_result_confirm" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/text_save" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

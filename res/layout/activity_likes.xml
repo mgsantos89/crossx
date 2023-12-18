@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar_likes" android:background="@color/primary_color" android:paddingTop="@dimen/notification_bar_heigth" android:layout_width="fill_parent" android:layout_height="@dimen/toobar_heigth" android:minHeight="?actionBarSize" android:layout_alignParentTop="true" android:elevation="4.0sp" app:popupTheme="@style/Theme.AppCompat.Light" app:theme="@style/ToolBar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list_comments" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/gray_ligth" android:dividerHeight="1.0dip" android:layout_alignParentTop="true" />
+</LinearLayout>

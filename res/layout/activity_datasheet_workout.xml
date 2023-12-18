@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar_training" android:background="@color/primary_color" android:paddingTop="@dimen/notification_bar_heigth" android:layout_width="fill_parent" android:layout_height="@dimen/toobar_heigth" android:minHeight="?actionBarSize" android:layout_alignParentTop="true" android:elevation="4.0sp" app:popupTheme="@style/Theme.AppCompat.Light" app:theme="@style/ToolBar" />
+    <com.viewpagerindicator.TitlePageIndicator android:id="@id/indicator_data_sheet_workout" android:layout_width="fill_parent" android:layout_height="@dimen/toobar_heigth_small" android:layout_alignParentTop="true" android:textAlignment="center" android:elevation="4.0sp" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager_data_sheet_workout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

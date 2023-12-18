@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_hour" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ffb0b0b0" android:id="@id/item_day_week" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="Thu" />
+        <TextView android:textSize="32.0sp" android:textColor="#ff000000" android:id="@id/item_day_month" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="16" />
+    </LinearLayout>
+    <com.startapps.crossx.view.RoundedImageView android:id="@id/img_user" android:background="@drawable/shape_circular_white" android:layout_width="@dimen/item_list_workout_img_size" android:layout_height="@dimen/item_list_workout_img_size" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/item_name_coach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Luciano" android:lines="1" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/item_name_program" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="crosfit" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center|left" android:id="@id/item_hour" android:paddingLeft="-5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8h - 9h" android:drawableLeft="@drawable/ic_clock" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="right" android:orientation="vertical" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="100.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-5.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/ic_arrow" android:scaleType="center" android:layout_alignRight="@id/item_limit" android:layout_alignBottom="@id/item_limit" />
+        <ImageView android:id="@id/image_marker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:src="@drawable/marker" android:layout_alignLeft="@id/item_limit" android:layout_alignBottom="@id/item_limit" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffb0b0b0" android:id="@id/item_limit" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="1/40 vagas" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

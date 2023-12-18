@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/toolbar" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:text="@string/activity_choose_form_payment_title" />
+            <TextView android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/textview_total_to_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="36.0dip" android:text="@string/global_total_to_pay" />
+            <include layout="@layout/item_choose_form_payment_credt_card" />
+            <View android:background="@color/gray_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <include layout="@layout/item_choose_form_payment_billet" />
+            <View android:background="@color/gray_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <include layout="@layout/item_choose_form_payment_add_new_card" />
+            <View android:background="@color/gray_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Space android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <include layout="@layout/layout_footer_warning_safe_conection" />
+            <Button android:id="@id/button_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/global_continue" android:layout_alignParentBottom="true" style="@style/BlueButton" />
+        </LinearLayout>
+    </ScrollView>
+    <ViewStub android:id="@id/stub_loading" android:layout="@layout/view_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_error" android:layout="@layout/view_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_empty" android:layout="@layout/view_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

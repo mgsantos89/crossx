@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@color/color_background_timer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/color_background_timer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_round" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/blue" android:gravity="center_vertical" android:id="@id/textRund" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/round" android:includeFontPadding="false" />
+                <TextView android:textSize="110.0sp" android:textColor="@color/blue" android:id="@id/textRundCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:text="0" android:includeFontPadding="false" />
+            </LinearLayout>
+            <com.startapps.crossx.view.widget.Chronometer android:textSize="110.0sp" android:textColor="#ffffffff" android:id="@id/chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/mask" android:background="@color/color_mask_background_timer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageStart" android:background="@android:color/transparent" android:padding="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/icon_play_timer" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/buttonReset" android:background="@android:color/transparent" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/icon_reset_timer" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/viewDelay" android:background="@color/color_background_timer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="90.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textDelayCount" android:background="@drawable/hexagon_count_delay" android:padding="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="0" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/buttonCloseChronometro" android:background="@android:color/transparent" android:padding="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bt_close" android:layout_alignParentTop="true" />
+</RelativeLayout>

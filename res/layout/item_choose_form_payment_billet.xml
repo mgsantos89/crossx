@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_billet" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_type" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_code_boleto" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/black" android:id="@id/textview_type_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0sp" android:text="@string/activity_choose_form_payment_alternative" android:layout_toRightOf="@id/imageview_type" />
+    <TextView android:id="@id/textview_type_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/activity_choose_form_payment_billet" android:layout_below="@id/textview_type_title" android:layout_alignLeft="@id/textview_type_title" />
+    <RadioButton android:id="@id/rb_choose_billet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:buttonTint="@color/blue" style="@style/RadioButton" />
+</RelativeLayout>

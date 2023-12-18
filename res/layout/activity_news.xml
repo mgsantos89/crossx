@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/img_backgroud_newfeature" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="24.0dip" android:text="@string/act_news_title" android:layout_above="@id/textview_description" />
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:id="@id/textview_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="24.0dip" android:text="@string/act_news_description" android:layout_above="@id/container_buttons" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/container_buttons" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@android:color/black" android:id="@id/button_down" android:text="@string/act_news_not_now" style="@style/TransparentButton" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/primary_color" android:gravity="center" android:id="@id/button_continue" android:text="@string/global_continue" android:drawableRight="@drawable/ic_arrow_forward" android:drawablePadding="4.0dip" android:drawableTint="@color/primary_color" style="@style/TransparentButton" />
+    </LinearLayout>
+</RelativeLayout>

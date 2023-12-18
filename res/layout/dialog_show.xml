@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="@dimen/dialog_min_width" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_min_width">
+        <ImageView android:id="@id/alert_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:src="@drawable/ic_dialog_success" />
+        <com.startapps.crossx.custom.textview.CustomFontTextView android:textSize="20.0sp" android:textColor="@color/text_2c4151" android:gravity="center" android:id="@id/alert_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="Sucesso!" android:fontFamily="@font/open_sans_bold" />
+        <com.startapps.crossx.custom.textview.CustomFontTextView android:textSize="14.0sp" android:textColor="@color/text_4b6070" android:gravity="center" android:id="@id/alert_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="24.0dip" android:text="Error" android:fontFamily="@font/open_sans" />
+        <RelativeLayout android:id="@id/btn_ok" android:padding="2.0dip" android:layout_width="76.0dip" android:layout_height="49.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="28.0dip">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BoxShadowStyle">
+                <com.startapps.crossx.custom.textview.CustomFontTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/text_2c4151" android:gravity="center" android:id="@id/btn_cancel_warning" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="7.0dip" android:text="@string/string_picker_dialog_ok" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

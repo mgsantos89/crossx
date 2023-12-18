@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_processing" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_back_pressed" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="16.0dip" android:src="@drawable/ic_close_black_24px" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_light" android:gravity="center" android:id="@id/textview_status_processing_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="96.0dip" android:text="@string/activity_processing_status_payment_processing" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/textview_processing_status_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:text="@string/activity_processing_status_payment_processing_description" android:layout_below="@id/textview_status_processing_title" android:layout_marginStart="16.0dip" />
+    <ImageView android:id="@id/imageview_status_processing" android:layout_width="84.0dip" android:layout_height="68.0dip" android:layout_marginTop="106.0dip" android:layout_below="@id/textview_processing_status_description" android:layout_centerHorizontal="true" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/textview_processing_status_description" android:layout_centerInParent="true" layout="@layout/layout_total_to_pay" />
+    <ProgressBar android:id="@id/progressbar_processing_status" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="116.0dip" android:layout_below="@id/textview_processing_status_description" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/layout_button_processing_status" />
+</RelativeLayout>

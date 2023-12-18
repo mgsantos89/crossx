@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/notification_bar_heigth" android:paddingBottom="@dimen/margin_xmedium" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_person" android:background="@drawable/shape_circular_white" android:layout_width="@dimen/menu_drawer_header_image_size" android:layout_height="@dimen/menu_drawer_header_image_size" android:layout_marginLeft="@dimen/menu_drawer_width_padding_icon" android:layout_marginTop="@dimen/margin_xxmedium" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_toRightOf="@id/img_person" android:layout_alignTop="@id/img_person" android:layout_alignBottom="@id/img_person">
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/gray" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/gray" android:id="@id/box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</RelativeLayout>

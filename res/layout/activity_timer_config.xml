@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollViewTabata" android:background="@drawable/bg_timer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/text_type_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/type" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/layoutCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+            <CheckBox android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/check_progress" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/selector_checbox_timer" android:text="@string/progress" android:buttonTint="#ffffffff" />
+            <CheckBox android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/check_regress" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:button="@drawable/selector_checbox_timer" android:text="@string/regress" android:layout_toRightOf="@id/check_progress" android:layout_alignTop="@id/check_progress" android:layout_toEndOf="@id/check_progress" android:buttonTint="#ffffffff" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/text_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="@string/time" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/text_time_minutes" android:text="@string/minutes" android:layout_centerHorizontal="true" style="@style/TextTimerPosition" />
+                <EditText android:id="@id/text_time_minutes_count" android:text="10" style="@style/EdiTextSetTimer" />
+            </LinearLayout>
+            <TextView android:textSize="25.0sp" android:textColor="#ffffffff" android:id="@id/text_time_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text=":" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/text_time_seconds" android:text="@string/seconds" android:layout_centerHorizontal="true" style="@style/TextTimerPosition" />
+                <EditText android:id="@id/text_time_seconds_count" android:text="00" style="@style/EdiTextSetTimer" />
+            </LinearLayout>
+        </LinearLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.7" />
+        <Button android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/bt_init_timer" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/init_timer" />
+    </LinearLayout>
+</ScrollView>

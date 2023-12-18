@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_wod" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.viewpagerindicator.TitlePageIndicator android:id="@id/indicator_athletes" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressBarDayTraining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    <ImageView android:id="@id/image_warning" android:background="@drawable/shape_black_image_warning" android:padding="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_no_program" android:layout_centerInParent="true" />
+    <Button android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/button_cv_check_in" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/text_goto_checkin" android:layout_alignParentBottom="true" />
+</RelativeLayout>

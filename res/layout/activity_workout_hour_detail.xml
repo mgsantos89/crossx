@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progressBarCheckIn" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ffb0b0b0" android:id="@id/item_day_week" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="Thu" />
+                <TextView android:textSize="32.0sp" android:textColor="#ff000000" android:id="@id/item_day_month" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="16" />
+            </LinearLayout>
+            <ImageView android:id="@id/img_user" android:background="@drawable/shape_circular_white" android:layout_width="@dimen/item_list_workout_img_size" android:layout_height="@dimen/item_list_workout_img_size" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/item_name_coach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Luciano" android:lines="1" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/item_name_program" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="crosfit" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center|left" android:id="@id/item_hour" android:paddingLeft="-5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8h - 9h" android:drawableLeft="@drawable/ic_clock" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="#ffb0b0b0" android:id="@id/item_limit" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="1/40 vagas" />
+        </LinearLayout>
+        <View android:background="@drawable/shape_shadow" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <ListView android:id="@id/list_workout_hour_users" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@color/gray_ligth" android:dividerHeight="1.0dip" android:layout_weight="1.0" android:layout_alignParentTop="true" />
+        <EditText android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="start" android:id="@id/gympass_token" android:background="#ffcccccc" android:padding="8.0dip" android:focusableInTouchMode="true" android:nextFocusLeft="@id/gympass_token" android:nextFocusUp="@id/gympass_token" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="0.0dip" android:hint="Gympass Token" android:lines="1" />
+        <LinearLayout android:gravity="start" android:id="@id/gympass_view" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:layout_gravity="start" android:id="@id/gympass_icon" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/ic_gympass" />
+            <TextView android:id="@id/gympass_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_gympass_token_checkin" />
+        </LinearLayout>
+        <Button android:enabled="true" android:textColor="#ff000000" android:gravity="center" android:id="@id/cv_check_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/text_goto_checkin" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressBarCheckIn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    <ImageView android:id="@id/image_warning_check_in" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_checkin_disabled" android:layout_centerInParent="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/message_bar" android:background="@color/blue_bar_message_list_complete" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="0.0dip" android:text="16" android:layout_alignParentBottom="true" />
+</RelativeLayout>
